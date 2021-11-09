@@ -1,0 +1,61 @@
+<style>
+  body {
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+  }
+    @keyframes blink {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(0) rotate(360deg); }
+  }
+  
+  .cube {
+    position: auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid brown;
+    background-color: hsl(50, 14%, 46%);
+    box-shadow: 20px 20px 26px 0px grey;
+  }
+  
+
+
+  .sphere {
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    position: auto;
+    width: 200px;
+    height: 200px;
+    border: 10px solid brown;
+    border-radius: 50%;
+    box-shadow: 20px 20px 26px 0px grey;
+  }
+
+  .arrow-up {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid black;
+  }
+
+  .semi-circle {
+    position: absolute;
+    top: 70%;
+   	height: 150px; 
+    width: 300px; 
+    border-radius: 0 0 300px 300px; 
+    background-color: hsl(202, 54%, 26%);
+    box-shadow: 20px 20px 26px 0px grey;
+  }
+</style>
+
+<div class="cube"></div>
+<div class="sphere"></div>
+<div class="arrow-up"></div>
+<div class="semi-circle"></div>
